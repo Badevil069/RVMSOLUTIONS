@@ -1,5 +1,4 @@
-import { Phone, Mail, Clock, MapPin, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 import SectionWrapper from '@/components/section-wrapper';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -28,13 +27,6 @@ const contactDetails = [
     },
 ];
 
-const socialLinks = [
-    { icon: <Facebook />, href: '#' },
-    { icon: <Twitter />, href: '#' },
-    { icon: <Instagram />, href: '#' },
-    { icon: <Youtube />, href: '#' },
-]
-
 export default function ContactPage() {
     return (
         <div className="flex flex-col min-h-screen bg-background">
@@ -59,16 +51,6 @@ export default function ContactPage() {
                                         </div>
                                     </div>
                                 ))}
-                            </div>
-                             <div>
-                                <h3 className="text-2xl font-bold mb-4">Follow our social media</h3>
-                                <div className="flex gap-4">
-                                    {socialLinks.map((social, index) => (
-                                        <a key={index} href={social.href} className="text-muted-foreground hover:text-primary transition-colors">
-                                            {social.icon}
-                                        </a>
-                                    ))}
-                                </div>
                             </div>
                         </div>
                         <div>
