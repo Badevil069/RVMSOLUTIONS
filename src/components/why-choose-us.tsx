@@ -48,12 +48,12 @@ export default function WhyChooseUs() {
         </div>
         <div className="relative">
           <Image
-            src="https://images.unsplash.com/photo-1585832349343-a173d1323559?q=80&w=1920&auto=format&fit=crop"
+            src="/payment-illustration.png"
             alt="Secure online payment on a smartphone"
             data-ai-hint="secure payment smartphone"
             width={800}
             height={800}
-            className="rounded-lg shadow-lg object-cover aspect-square"
+            className="rounded-lg object-contain aspect-square"
           />
           <div className="absolute -bottom-8 -right-8 bg-green-500 text-white p-6 rounded-lg shadow-xl text-center">
             <p className="text-4xl font-bold">200+</p>
