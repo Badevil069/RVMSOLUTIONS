@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export default function Hero() {
@@ -20,11 +21,11 @@ export default function Hero() {
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
           Your trusted partner in digital payment solutions.
         </p>
-        <a href="#enquiry">
+        <Link href="/contact">
           <Button size="lg" className="font-semibold text-lg">
             Enquire Now
           </Button>
-        </a>
+        </Link>
       </div>
     </section>
   );
