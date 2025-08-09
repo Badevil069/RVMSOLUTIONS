@@ -53,7 +53,14 @@ const sendContactEmailFlow = ai.defineFlow(
 
     const resend = new Resend(resendApiKey);
 
-    const emailHtml = render(<ContactFormEmail {...input} />);
+    const emailHtml = render(React.createElement(ContactFormEmail, {
+      name: input.name,
+      company: input.company,
+      phone: input.phone,
+      email: input.email,
+      subject: input.subject,
+      message: input.message,
+    }));
 
     try {
         await resend.emails.send({
