@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, LogIn } from 'lucide-react';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,8 +47,14 @@ export default function Header() {
               {link.name}
             </a>
           ))}
+           <Link href="/login">
+              <Button variant="outline" size="sm">
+                <LogIn className="mr-2 h-4 w-4" />
+                Login
+              </Button>
+            </Link>
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild className="md:hidden">
@@ -69,9 +75,15 @@ export default function Header() {
                     {link.name}
                   </a>
                 ))}
+                 <Link href="/login" className="text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                  Login
+                </Link>
               </div>
             </SheetContent>
           </Sheet>
+        </div>
+         <div className="hidden md:flex items-center gap-2">
+            <ThemeToggle />
         </div>
       </div>
     </header>
