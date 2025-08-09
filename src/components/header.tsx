@@ -21,10 +21,9 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { name: 'Services', href: '#services' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Enquiry', href: '#enquiry' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -43,9 +42,9 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+            <Link key={link.name} href={link.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
               {link.name}
-            </a>
+            </Link>
           ))}
            <Link href="/login">
               <Button variant="outline" size="sm">
@@ -71,9 +70,9 @@ export default function Header() {
                     </h1>
                 </Link>
                 {navLinks.map((link) => (
-                  <a key={link.name} href={link.href} className="text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                  <Link key={link.name} href={link.href} className="text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     {link.name}
-                  </a>
+                  </Link>
                 ))}
                  <Link href="/login" className="text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                   Login

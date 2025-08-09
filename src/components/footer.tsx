@@ -1,14 +1,17 @@
 import { Phone, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="bg-card border-t">
+    <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div className='md:col-span-1'>
+              <Link href="/">
                 <h3 className="text-xl font-bold text-primary mb-2 w-fit mx-auto md:mx-0">RVM Solutions</h3>
+              </Link>
                 <p className="text-sm text-muted-foreground">Smart. Secure. Seamless Payments.</p>
             </div>
             <div className='md:col-span-2 flex flex-col sm:flex-row justify-center md:justify-end items-center gap-4 sm:gap-8 text-sm'>
