@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
         </div>
         <div className="relative">
           <Image
-            src="/payment-illustration.png"
+            src="https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?q=80&w=1920&auto=format&fit=crop"
             alt="Secure online payment on a smartphone"
             data-ai-hint="secure payment smartphone"
             width={800}
