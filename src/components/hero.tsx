@@ -19,6 +19,10 @@ export default function Hero() {
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
           Your trusted partner in digital payment solutions.
         </p>
+        <div className="max-w-3xl mx-auto text-base md:text-lg text-gray-200 space-y-4">
+            <p>No cash? No problem—pay online in seconds. With online payments, managing your finances has never been easier. Say goodbye to complicated processes and hello to a simpler, smarter way to handle your money.</p>
+            <p>Start simplifying your life today—one payment at a time. Experience the future of payments with us!</p>
+        </div>
       </div>
     </section>
   );
