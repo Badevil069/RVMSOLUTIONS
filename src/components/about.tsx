@@ -13,12 +13,12 @@ export default function About() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="relative">
                     <Image
-                        src="https://placehold.co/800x600.png"
+                        src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1920&auto=format&fit=crop"
                         alt="Online payment illustration"
                         data-ai-hint="online payment"
                         width={800}
                         height={600}
-                        className="rounded-lg shadow-lg"
+                        className="rounded-lg shadow-lg object-cover aspect-[4/3]"
                     />
                     <div className="absolute bottom-4 -right-4 bg-primary text-primary-foreground p-6 rounded-lg shadow-xl text-center">
                         <p className="text-4xl font-bold">20+</p>
