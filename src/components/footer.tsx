@@ -23,6 +23,9 @@ export default function Footer() {
                 <Mail size={18} className="text-primary group-hover:scale-110 transition-transform" />
                 <span className='text-muted-foreground group-hover:text-primary'>rvmsolutions2025@gmail.com</span>
                 </a>
+                <Link href="/contact" className="hover:text-primary transition-colors group text-muted-foreground group-hover:text-primary">
+                  Need Help?
+                </Link>
           </div>
         </div>
         <div className="border-t mt-8 pt-6 text-center text-sm text-muted-foreground">
