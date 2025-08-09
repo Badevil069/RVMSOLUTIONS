@@ -6,6 +6,7 @@ import Testimonials from '@/components/testimonials';
 import WhyChooseUs from '@/components/why-choose-us';
 import Cta from '@/components/cta';
 import Footer from '@/components/footer';
+import SectionWrapper from '@/components/section-wrapper';
 
 export default function Home() {
   return (
