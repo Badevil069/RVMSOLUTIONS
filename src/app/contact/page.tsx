@@ -19,7 +19,7 @@ const contactDetails = [
     {
         icon: <Mail className="h-8 w-8 text-primary" />,
         title: 'Email Us',
-        info: 'help@mahipaytechsolutions.com',
+        info: 'rvmsolutions2025@gmail.com',
     },
     {
         icon: <Clock className="h-8 w-8 text-primary" />,
