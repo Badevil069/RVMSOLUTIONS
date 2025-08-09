@@ -9,7 +9,7 @@ const contactDetails = [
     {
         icon: <MapPin className="h-8 w-8 text-primary" />,
         title: 'Head Office',
-        info: '7-31, Venkatapuram village, Sirivella Mandal Nandyal, Kurnool Andhrapradesh: 518510',
+        info: 'Sirivella, Nandyal, Kurnool Andhrapradesh: 518510',
     },
     {
         icon: <Phone className="h-8 w-8 text-primary" />,
