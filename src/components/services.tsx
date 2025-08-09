@@ -8,42 +8,42 @@ const services = [
     icon: <CreditCard className="h-8 w-8 text-primary" />,
     title: 'POS Machines',
     description: 'Fast and secure card payment terminals.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1583523738502-a86355644834?q=80&w=600&auto=format&fit=crop',
     aiHint: 'payment terminal'
   },
   {
     icon: <Globe className="h-8 w-8 text-primary" />,
     title: 'Online Payments',
     description: 'Accept payments from anywhere, anytime.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1604948501246-5b4a64a38010?q=80&w=600&auto=format&fit=crop',
     aiHint: 'online transaction'
   },
   {
     icon: <Shield className="h-8 w-8 text-primary" />,
     title: 'Secure Transactions',
     description: 'Advanced encryption to protect your business.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=600&auto=format&fit=crop',
     aiHint: 'data security'
   },
   {
     icon: <Landmark className="h-8 w-8 text-primary" />,
     title: 'Domestic Money Transfer (DMT)',
     description: 'Fast and secure fund transfers within the country.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1616563334187-5a8d385172b0?q=80&w=600&auto=format&fit=crop',
     aiHint: 'money transfer'
   },
   {
     icon: <Receipt className="h-8 w-8 text-primary" />,
     title: 'Bharat Bill Payments (BBPS)',
     description: 'Pay bills for electricity, water, DTH, and more.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1589156229692-2324e29c34ac?q=80&w=600&auto=format&fit=crop',
     aiHint: 'bill payment'
   },
     {
     icon: <Receipt className="h-8 w-8 text-primary" />,
     title: 'Utility Bill Payments',
     description: 'NSDL Pan card, Post-paid recharge, Credit card Bill Payments.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?q=80&w=600&auto=format&fit=crop',
     aiHint: 'utility bills'
   },
 ];
