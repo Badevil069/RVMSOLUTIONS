@@ -3,13 +3,13 @@ import { Button } from '@/components/ui/button';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center text-center">
+    <section className="relative h-screen w-full flex items-center justify-center text-center overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1920&auto=format&fit=crop"
         alt="A modern office showing digital payment technology"
         data-ai-hint="digital payment technology"
         fill
-        className="object-cover z-0"
+        className="object-cover z-0 animated-bg"
         priority
       />
       <div className="absolute inset-0 bg-black/70 z-10" />
