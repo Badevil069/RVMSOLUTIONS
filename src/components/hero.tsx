@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center text-center">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1920&auto=format&fit=crop"
         alt="A modern office showing digital payment technology"
         data-ai-hint="digital payment technology"
         fill
@@ -13,7 +13,7 @@ export default function Hero() {
         priority
       />
       <div className="absolute inset-0 bg-black/70 z-10" />
-      <div className="relative z-20 text-white px-4 animate-fade-in-up">
+      <div className="relative z-20 text-white px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg font-headline">
           Welcome to RVM Solutions
         </h1>

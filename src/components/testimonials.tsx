@@ -6,13 +6,13 @@ const testimonials = [
   {
     name: 'John D.',
     quote: "RVM Solutions helped us grow our business with reliable payment solutions.",
-    image: 'https://placehold.co/100x100.png',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop',
     aiHint: "business man"
   },
   {
     name: 'Priya K.',
     quote: "The service is excellent and the support team is always ready to help.",
-    image: 'https://placehold.co/100x100.png',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop',
     aiHint: "business woman"
   },
 ];
