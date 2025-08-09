@@ -12,6 +12,7 @@ import { z } from 'zod';
 import { Resend } from 'resend';
 import { render } from '@react-email/render';
 import ContactFormEmail from '@/components/emails/contact-form-email';
+import * as React from 'react';
 
 
 const SendContactEmailInputSchema = z.object({
