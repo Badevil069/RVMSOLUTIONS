@@ -34,12 +34,12 @@ export default function Enquiry() {
   }
 
   return (
-    <SectionWrapper id="enquiry" className="bg-secondary/50 dark:bg-card">
+    <SectionWrapper id="enquiry" className="bg-secondary/50 dark:bg-background">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold font-headline">Get in Touch</h2>
         <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Have a question or want to get started? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
       </div>
-      <Card className="max-w-2xl mx-auto p-6 md:p-8 shadow-lg">
+      <Card className="max-w-2xl mx-auto p-6 md:p-8 shadow-lg dark:bg-card border-border">
         <CardContent className='p-0'>
             <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -82,8 +82,8 @@ export default function Enquiry() {
                     </FormItem>
                 )}
                 />
-                <Button type="submit" size="lg" className="w-full text-primary-foreground font-semibold bg-gradient-to-r from-[#0056b3] to-[#003d80] hover:shadow-lg hover:opacity-90 transition-all">
-                Send Message
+                <Button type="submit" size="lg" className="w-full font-semibold">
+                  Send Message
                 </Button>
             </form>
             </Form>

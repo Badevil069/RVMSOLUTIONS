@@ -26,7 +26,7 @@ export default function Testimonials() {
       </div>
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {testimonials.map((testimonial) => (
-          <Card key={testimonial.name} className="flex flex-col items-center text-center p-8 shadow-sm hover:shadow-lg transition-shadow">
+          <Card key={testimonial.name} className="flex flex-col items-center text-center p-8 transition-shadow bg-secondary/30 dark:bg-card hover:shadow-lg">
             <Avatar className="w-20 h-20 mb-4 border-2 border-primary/20">
               <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.aiHint} />
               <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>

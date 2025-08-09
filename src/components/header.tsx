@@ -36,14 +36,14 @@ export default function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex flex-col">
-          <h1 className="text-xl font-bold bg-gradient-to-r from-[#0056b3] to-[#003d80] text-transparent bg-clip-text">
+          <h1 className="text-xl font-bold text-primary">
             RVM Solutions
           </h1>
           <p className="text-xs text-muted-foreground hidden sm:block">Smart. Secure. Seamless Payments.</p>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            <a key={link.name} href={link.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
               {link.name}
             </a>
           ))}
@@ -60,7 +60,7 @@ export default function Header() {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex flex-col self-start" onClick={() => setMobileMenuOpen(false)}>
-                    <h1 className="text-xl font-bold bg-gradient-to-r from-[#0056b3] to-[#003d80] text-transparent bg-clip-text">
+                    <h1 className="text-xl font-bold text-primary">
                         RVM Solutions
                     </h1>
                 </Link>

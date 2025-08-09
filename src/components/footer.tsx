@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div className='md:col-span-1'>
-                <h3 className="text-xl font-bold bg-gradient-to-r from-[#0056b3] to-[#003d80] text-transparent bg-clip-text mb-2 w-fit mx-auto md:mx-0">RVM Solutions</h3>
+                <h3 className="text-xl font-bold text-primary mb-2 w-fit mx-auto md:mx-0">RVM Solutions</h3>
                 <p className="text-sm text-muted-foreground">Smart. Secure. Seamless Payments.</p>
             </div>
             <div className='md:col-span-2 flex flex-col sm:flex-row justify-center md:justify-end items-center gap-4 sm:gap-8 text-sm'>

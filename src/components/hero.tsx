@@ -12,7 +12,7 @@ export default function Hero() {
         className="object-cover z-0"
         priority
       />
-      <div className="absolute inset-0 bg-black/60 z-10" />
+      <div className="absolute inset-0 bg-black/70 z-10" />
       <div className="relative z-20 text-white px-4 animate-fade-in-up">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg font-headline">
           Welcome to RVM Solutions
@@ -21,7 +21,7 @@ export default function Hero() {
           Your trusted partner in digital payment solutions.
         </p>
         <a href="#enquiry">
-          <Button size="lg" className="bg-gradient-to-r from-[#0056b3] to-[#003d80] hover:shadow-lg hover:opacity-90 transition-all text-primary-foreground font-semibold">
+          <Button size="lg" className="font-semibold text-lg">
             Enquire Now
           </Button>
         </a>
