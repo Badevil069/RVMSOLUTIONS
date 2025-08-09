@@ -9,6 +9,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
+import { sendContactEmail } from '@/ai/flows/send-contact-email-flow';
+import { useState } from 'react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -21,18 +23,40 @@ const formSchema = z.object({
 
 export default function ContactForm() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: { name: '', company: '', phone: '', email: '', subject: '', message: '' },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values); // In a real app, you'd send this to a server
-    toast({
-      title: 'Message Sent!',
-      description: 'Thank you for your message. We will get back to you shortly.',
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    try {
+      const result = await sendContactEmail(values);
+      if (result.status === 'success') {
+        toast({
+          title: 'Message Sent!',
+          description: result.message,
+        });
+        form.reset();
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Uh oh! Something went wrong.',
+          description: result.message,
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      toast({
+        variant: 'destructive',
+        title: 'Uh oh! Something went wrong.',
+        description: 'There was a problem sending your message. Please try again.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -125,8 +149,8 @@ export default function ContactForm() {
                   </FormItem>
               )}
               />
-              <Button type="submit" size="lg" className="w-full font-semibold">
-                Submit Now
+              <Button type="submit" size="lg" className="w-full font-semibold" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Submit Now'}
               </Button>
           </form>
           </Form>
