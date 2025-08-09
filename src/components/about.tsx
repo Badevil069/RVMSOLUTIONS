@@ -26,7 +26,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="space-y-6">
-                    <p className="text-primary font-semibold tracking-wide">ABOUT RVM PAY</p>
+                    <p className="text-primary font-semibold tracking-wide">ABOUT RVM Solutions</p>
                     <h2 className="text-3xl md:text-4xl font-bold font-headline">
                         Simplify Your Life, One Payment at a Time
                     </h2>
