@@ -22,6 +22,7 @@ const formSchema = z.object({
 
 export default function SignupPage() {
   const [otpSent, setOtpSent] = useState(false);
+  const [isSendingOtp, setIsSendingOtp] = useState(false);
   const [isVerifying, setIsVerifying] = useState(false);
   const { toast } = useToast();
 
@@ -40,6 +41,7 @@ export default function SignupPage() {
     const result = await form.trigger('email');
     if (!result) return;
 
+    setIsSendingOtp(true);
     try {
       const response = await sendOtp({ email });
       // In a real app, you wouldn't show the OTP in a toast.
@@ -50,11 +52,14 @@ export default function SignupPage() {
       });
       setOtpSent(true);
     } catch (error) {
+      console.error('Error sending OTP:', error);
       toast({
         variant: 'destructive',
         title: 'Uh oh! Something went wrong.',
         description: 'There was a problem sending the OTP. Please try again.',
       });
+    } finally {
+      setIsSendingOtp(false);
     }
   };
 
@@ -152,8 +157,8 @@ export default function SignupPage() {
               )}
 
               {!otpSent ? (
-                <Button type="button" className="w-full" onClick={handleSendOtp}>
-                  Send OTP
+                <Button type="button" className="w-full" onClick={handleSendOtp} disabled={isSendingOtp}>
+                  {isSendingOtp ? 'Sending...' : 'Send OTP'}
                 </Button>
               ) : (
                 <Button type="submit" className="w-full" disabled={isVerifying}>
