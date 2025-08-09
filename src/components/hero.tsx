@@ -12,11 +12,11 @@ export default function Hero() {
         priority
       />
       <div className="absolute inset-0 bg-black/70 z-10" />
-      <div className="relative z-20 text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg font-headline">
+      <div className="relative z-20 px-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg font-headline text-primary">
           Welcome to RVM Solutions
         </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md text-white">
           Your trusted partner in digital payment solutions.
         </p>
         <div className="max-w-3xl mx-auto text-base md:text-lg text-gray-200 space-y-4">
