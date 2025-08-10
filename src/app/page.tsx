@@ -7,6 +7,7 @@ import WhyChooseUs from '@/components/why-choose-us';
 import Cta from '@/components/cta';
 import Footer from '@/components/footer';
 import SectionWrapper from '@/components/section-wrapper';
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
