@@ -14,11 +14,21 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <About />
-        <Services />
-        <Testimonials />
-        <WhyChooseUs />
-        <Cta />
+        <SectionWrapper>
+          <About />
+        </SectionWrapper>
+        <SectionWrapper>
+          <Services />
+        </SectionWrapper>
+        <SectionWrapper>
+          <Testimonials />
+        </SectionWrapper>
+        <SectionWrapper>
+          <WhyChooseUs />
+        </SectionWrapper>
+        <SectionWrapper>
+          <Cta />
+        </SectionWrapper>
       </main>
       <Footer />
     </div>
